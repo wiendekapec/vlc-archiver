@@ -61,7 +61,6 @@ var packCmd = &cobra.Command{
 }
 
 func init() {
-	// Добавляем к корневой команде команду "pack"
 	rootCmd.AddCommand(packCmd)
 	packCmd.Flags().StringP("method", "m", "", "compression method: vlc")
 	if err := packCmd.MarkFlagRequired("method"); err != nil {

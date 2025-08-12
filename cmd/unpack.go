@@ -35,7 +35,6 @@ func unpack(cmd *cobra.Command, args []string) {
 		handleErr(err)
 	}
 
-	// packed := Encode(data)
 	packed := decoder.Decode(data)
 	err = os.WriteFile(unpackedFileName(filePath), []byte(packed), 0644)
 	if err != nil {
@@ -56,7 +55,6 @@ var unpackCmd = &cobra.Command{
 }
 
 func init() {
-	// Добавляем к корневой команде команду "pack"
 	rootCmd.AddCommand(unpackCmd)
 	unpackCmd.Flags().StringP("method", "m", "", "decompression method: vlc")
 	if err := unpackCmd.MarkFlagRequired("method"); err != nil {

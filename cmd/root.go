@@ -6,7 +6,6 @@ import (
 	"os"
 )
 
-// Корневая команда
 var rootCmd = &cobra.Command{
 	Short: "Simple archiver",
 }
