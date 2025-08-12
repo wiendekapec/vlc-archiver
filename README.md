@@ -1,4 +1,4 @@
-Simple variable-length code archiver:
+## Simple variable-length code archiver
 
 Downloading dependencies and building project
 ```bash
