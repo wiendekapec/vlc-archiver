@@ -1,7 +1,8 @@
 Simple variable-length code archiver:
 
-Building project
+Downloading dependencies and building project
 ```bash
+go mod tidy
 go build
 ```
 Packing .txt file
